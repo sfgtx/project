@@ -14,23 +14,23 @@
     </style>
     <table border="1" width="40%">
     <th colspan="2">Hotel Form</th>
-        <form action="">
+        <form action="" method="POST">
             <tr>
                 <td><b>Name:</b></td>
-                <td><input type="text" placeholder="John" autofocus></td>
+                <td><input type="text" placeholder="John" autofocus autocomplete="" minlength="2" maxlength="15" required></td>
             </tr>
             <tr>
                 <td>Surname:</td>
-                <td><input type="text" placeholder="Davidson"></td>
+                <td><input type="text" placeholder="Davidson" minlength="2" maxlength="12" required></td>
             </tr>
             <tr>
                 <td>Date:</td>
-                <td><input type="date" name="" id=""></td>
+                <td><input type="date" name="" id="" required></td>
             </tr>
             <tr>
                 <td>Rooms:</td>
                 <td>
-                    <select>
+                    <select required>
                             <option value="1">1</option>
                             <option value="2">2</option>
                             <option value="3">3</option>
@@ -44,7 +44,7 @@
             </tr>
             <tr>
                 <td>Your tel.:</td>
-                <td><input type="number" value="05012345789"></td>
+                <td><input type="tel" value="05012345789" pattern="[0-9]{9,11}"></td>
             </tr>
             <tr>
                 <td colspan="2"><textarea placeholder="Your comment" rows="6" cols="72"></textarea></td>
